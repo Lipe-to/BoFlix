@@ -1,0 +1,10 @@
+/* variaveis padrao, para usar, é só escrever var(nome-da-variavel) */
+:root {
+    --destaque: #2a2020;
+    --transicao-padrao: all 0.2s ease;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
