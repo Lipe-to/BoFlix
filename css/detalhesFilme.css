@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(199, 68, 133, 0.103);
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(199, 68, 133);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.voltar {
+    position: absolute;
+    left: 30px;
+}
+
+.detalhes-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
+    min-height: 80vh;
+}
+
+.detalhes-filme {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px;
+}
+
+.detalhes-video {
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.detalhes-video:hover {
+    transform: scale(1.02);
+}
+
+.detalhes-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalhes-titulo {
+    color: rgb(199, 68, 133);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.detalhes-descricao {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.detalhes-extra {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.detalhes-extra li {
+    margin-bottom: 6px;
+    color: #ddd;
+}
+
+strong {
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.assistir {
+    background-color: rgb(199, 68, 133);
+    color: #fff;
+}
+
+.assistir:hover {
+    background-color: rgb(199, 68, 133);
+}
+
+.voltar-btn {
+    background-color: transparent;
+    color: rgb(199, 68, 133);
+    border: 2px solid rgb(199, 68, 133);
+}
+
+.voltar-btn:hover {
+    background-color: rgb(199, 68, 133);
+    color: #fff;
+}
+
+footer {
+    background-color: rgba(199, 68, 133, 0.103);
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    border-top: 1px solid #222;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+@media (max-width: 900px) {
+    .detalhes-filme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detalhes-video {
+        width: 90%;
+    }
+
+    .detalhes-info {
+        width: 90%;
+    }
+
+    .detalhes-titulo {
+        font-size: 1.8rem;
+    }
+}

@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoFlix - Seu Cinema Online</title>
     <link rel="stylesheet" href="/css/style.css">
-    <title>BoFlix</title>
+    <link rel="shortcut icon" href="/assets/BO.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="">Home</a>
-            <img width="50" height="50" src="" alt="">
-            <a href="">Sobre Nós</a>
+        <nav class="navbar">
+            <a href="#" class="nav-link">Home</a>
+            <img class="logo" width="150px" src="/assets/logo.png" alt="Logo BoFlix">
+            <a href="nos.html" class="nav-link">Sobre Nós</a>
         </nav>
     </header>
+
     <main>
         <section class="filme-principal">
             <div class="titulo-container">
-                <h1>Titulo</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, odit voluptates eveniet voluptate
-                    quis et dolorum libero nostrum commodi accusamus architecto tempora deserunt debitis saepe eaque at
-                    eligendi delectus perferendis.
+                <h1 class="titulo-filme">Título do Filme</h1>
+                <p class="descricao-filme">
+                    Bloom busca a verdade sobre seus pais e o desaparecido Reino de Domino com a ajuda das amigas Winx.
                 </p>
+                <div class="botoes">
+                    <button class="btn assistir">▶ Assistir Agora</button>
+                    <a href="/html/detalhesFilme.html"><button class="btn info">Mais Informações</button></a>
+                </div>
             </div>
-            <div>
-                <img class="img-principal" width="500" height="300" src="" alt="">
+            <div class="img-container">
+                <img class="img-principal" src="/assets/Winx.jpg"
+                    alt="Filme em destaque">
             </div>
         </section>
-        <section class="filmes-container">
-                <img src="/assets/barbie.png" alt="">
-                <img src="/assets/barbie.png" alt="">
-                <img src="/assets/barbie.png" alt="">
-                <img src="/assets/barbie.png" alt="">
-                <img src="/assets/barbie.png" alt="">
-                <img src="/assets/barbie.png" alt="">
 
+        <section class="filmes-container">
+            <h2>Catálogo</h2>
+            <div class="grid-filmes">
+                <img src="/assets/barbie.jpeg" alt="Barbie" 
+                    data-titulo="Barbie: O Filme"
+                    data-descricao="A icônica boneca ganha vida em uma aventura repleta de cor, humor e autodescoberta.">
+                <img src="/assets/BrabieAFa.jpeg" alt="Barbie: A Fashion Fairytale"
+                    data-titulo="Barbie: a Fashion Fairytale"
+                    data-descricao="Barbie viaja para Paris e descobre o poder da criatividade e da amizade para salvar uma casa de moda.">
+                <img src="/assets/BrabiePearl.jpeg" alt="Barbie: A Princesa das Pérolas"
+                    data-titulo="Barbie: a Princesa das Pérolas"
+                    data-descricao="Barbie é uma sereia que descobre ser uma princesa e usa seu dom para proteger o reino subaquático.">
+                <img src="/assets/myLittlePony.jpeg" alt="My Little Pony: O Filme"
+                    data-titulo="My Little Pony: O Filme"
+                    data-descricao="Twilight Sparkle e suas amigas embarcam em uma jornada para salvar Equestria de uma nova ameaça.">
+                <img src="/assets/Winx.jpg" alt="Winx: O Segredo do Reino Perdido"
+                    data-titulo="Winx: O Segredo do Reino Perdido"
+                    data-descricao="Bloom busca a verdade sobre seus pais e o desaparecido Reino de Domino com a ajuda das amigas Winx.">
+                <img src="/assets/mosterHigh.jpeg" alt="Monster High: Scaris - A Cidade Sem Medo"
+                    data-titulo="Monster High: Scaris - A Cidade Sem Medo"
+                    data-descricao="As monstrinhas viajam para Scaris, a glamourosa cidade da moda, em uma aventura cheia de estilo e amizade.">
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 BoFlix — Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
