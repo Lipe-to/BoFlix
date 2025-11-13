@@ -1,12 +1,14 @@
 /* variaveis padrao, para usar, é só escrever var(nome-da-variavel) */
 :root {
-    --destaque: #2a2020;
+    --destaque: rgb(199, 68, 133);
     --transicao-padrao: all 0.2s ease;
 }
 
 body{
+    background: linear-gradient(to right, #111 50%, rgb(83, 29, 56));
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #voltar {
@@ -47,7 +49,7 @@ section{
 }
 
 main img{
-    border: solid white 10px;
+    border: solid #111 10px;
     border-radius: 50%;
     width: 14vw;
 }
@@ -68,10 +70,11 @@ main nav{
 
 button{
     width: 10vw;
-    background-color: #fff;
+    background-color: transparent;
     padding: 2%;
     transition: var(--transicao-padrao);
     border: var(--destaque) 2px solid;
+    color: white;
 }
 
 button:hover{
