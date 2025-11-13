@@ -119,6 +119,7 @@ header {
 .filmes-container {
   padding: 50px 8%;
   background-color: #141414;
+  width: 100%;
 }
 
 .filmes-container h2 {
